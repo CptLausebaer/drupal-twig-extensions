@@ -39,7 +39,13 @@ class Basic extends Twig_Extension implements Twig_ExtensionInterface {
   function getFunctions() {
     return [
         new Twig_SimpleFunction('url', [$this, 'inertHref']),
-        new Twig_SimpleFunction('path', [$this, 'inertHref']),
+        new Twig_SimpleFunction('path', function ($string) {
+          if ($string === '<front>') {
+            return '/';
+          } else {
+            return $string;
+          }
+        }),
         new Twig_SimpleFunction('link', [$this, 'inertHref']),
         new Twig_SimpleFunction('file_url', [$this, 'returnParam']),
     ];
