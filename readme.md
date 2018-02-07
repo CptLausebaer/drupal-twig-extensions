@@ -23,6 +23,8 @@ This allows Twig templates that are used in both Pattern Lab and Drupal environm
 
 - `t`
 - `render`
+- `placeholder`
+- `without`
 
 ### Functions
 

@@ -27,6 +27,8 @@ class Basic extends Twig_Extension implements Twig_ExtensionInterface {
     return [
         new Twig_SimpleFilter('t', [$this, 'returnParam']),
         new Twig_SimpleFilter('render', [$this, 'returnParam']),
+        new Twig_SimpleFilter('placeholder', [$this, 'returnParam']),
+        new Twig_SimpleFilter('without', [$this, 'returnParam']),
     ];
   }
 
