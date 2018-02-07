@@ -1,11 +1,13 @@
 # Drupal Twig Extensions for Pattern Lab
 
-Todo: publish on Packagist
+```bash
+composer require pattern-lab/drupal-twig-extensions
+```
 
 ## How to use
 
 - Ensure your [Twig Pattern Engine](https://github.com/pattern-lab/patternengine-php-twig) is v2.2.0 +
-- Install this via composer (docs coming after it gets on Packagist)
+- Install this via composer
 - Add this to `config.yml`:
 
 ```yml
